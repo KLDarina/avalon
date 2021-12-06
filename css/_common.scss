@@ -1,0 +1,164 @@
+body {
+    background: $body-bg;
+    overflow-x: hidden;
+}
+
+.wrapper {
+    width: 100vw;
+    height: 100%;
+    position: relative;
+    overflow-x: hidden;
+
+    >.stars {
+        width: 100%;
+        height: 100%;
+        background: url(../assets/stars.svg) top right/ cover no-repeat;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: -2;
+    }
+
+    >.bg {
+        width: 100%;
+        height: 100%;
+        background: url(../assets/bg.png) top right/ cover no-repeat;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        filter: blur(500px);
+        z-index: 990;
+        display: none;
+    }
+
+    >.tree {
+        position: absolute;
+        left: 50%;
+        bottom: 20%;
+        transform: translate(-50%, 0);
+        z-index: 991;
+        width: 100%;
+
+        @media screen and (min-width: 767px) {
+            bottom: 250px;
+            width: 80%;
+        }
+
+        >img {
+            width: 100%;
+        }
+    }
+}
+
+.main {
+    position: relative;
+    z-index: 995;
+    // background: url(../assets/tree.png) bottom center / 80% no-repeat;
+    padding: 64px $padding-mob 0;
+
+    @media screen and (min-width: 2100px) {
+        padding: 120px $padding-xxl 0;
+    }
+
+    @media screen and (min-width: 1720px) and (max-width: 2099px) {
+        padding: 120px $padding-xl 0;
+    }
+
+    @media screen and (min-width: 1350px) and (max-width: 1719px) {
+        padding: 120px $padding-lg 0;
+    }
+
+    @media screen and (min-width: 1120px) and (max-width: 1349px) {
+        padding: 120px $padding-md 0;
+    }
+
+    @media screen and (min-width: 767px) and (max-width: 1119px) {
+        padding: 90px $padding-tablet 0;
+    }
+}
+
+.blur {
+    &--blue {
+        width: 40vw;
+        height: 40vw;
+        background: #4a46ff;
+        filter: blur(400px);
+        position: absolute;
+        top: -10%;
+        right: -15%;
+        z-index: -1;
+        opacity: 0.6;
+    }
+
+    &-top--pink {
+        width: 20vw;
+        height: 20vw;
+        background: #ffb1ee;
+        filter: blur(300px);
+        position: absolute;
+        top: 10%;
+        left: 5%;
+        z-index: -1;
+        opacity: 0.2;
+    }
+
+    &-bottom--pink {
+        width: 30vw;
+        height: 30vw;
+        background: #ff00c8;
+        filter: blur(500px);
+        position: absolute;
+        top: 40%;
+        left: 15%;
+        z-index: -1;
+        opacity: 0.4;
+    }
+}
+
+.about__block-2 {
+    >.blur--blue {
+        width: 400px;
+        height: 400px;
+        filter: blur(100px);
+        top: 0;
+        right: 0;
+        opacity: 0.2;
+    }
+
+    >.blur-top--pink {
+        width: 400px;
+        height: 400px;
+        filter: blur(100px);
+        top: 0;
+        left: 0;
+        opacity: 0.2;
+    }
+
+    >.blur-bottom--pink {
+        width: 100px;
+        height: 100px;
+        filter: blur(100px);
+        top: 0;
+        left: 0;
+        opacity: 0;
+    }
+}
+
+.about__block-1 {
+    >.blur-bottom--pink {
+        opacity: 0;
+    }
+}
+
+.currencies {
+    >.blur--blue {
+        width: 400px;
+        height: 400px;
+        filter: blur(100px);
+        top: 0;
+        right: 0;
+        opacity: 0.2;
+    }
+}

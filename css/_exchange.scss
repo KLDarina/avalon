@@ -1,0 +1,93 @@
+.exchange {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    align-items: flex-start;
+    position: relative;
+    @media screen and (min-width: 1120px) {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: calc(100vh - 120px);
+    }
+    @media screen and (min-width: 767px) and (max-width: 1119px) {
+        justify-content: center;
+        align-items: center;
+    }
+    @media screen and (min-width: 767px) {
+        height: calc(100vh - 80px);
+    }
+    &__content {
+        padding: 8px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        max-width: 832px;
+        width: 100%;
+        background: url(../assets/exchange-bg.png) top left / contain no-repeat;
+        @media screen and (min-width: 1120px) {
+            padding: 115px 0;
+            align-items: flex-start;
+        }
+        @media screen and (min-width: 767px) and (max-width: 1119px) {
+            padding: 32px 0;
+            align-items: center;
+        }
+    }
+    &__text {
+        margin: 12px 0 24px;
+        font-size: 20px;
+        line-height: 24px;
+        @media screen and (min-width: 1550px) {
+            margin: 40px 0 60px;
+            font-size: 32px;
+            line-height: 42px;
+        }
+        @media screen and (min-width: 767px) and (max-width: 1549px) {
+            margin: 20px 0 30px;
+            font-size: 22px;
+            line-height: 32px;
+        }
+    }
+    &__visual {
+        width: 120px;
+        @media screen and (min-width: 1120px) {
+            margin-left: 80px;
+            max-width: 525px;
+            width: 100%;
+        }
+        @media screen and (min-width: 767px) and (max-width: 1119px) {
+            width: 300px;
+        }
+        > img {
+            width: 100%;
+        }
+    }
+    // &::before {
+    //     content: "";
+    //     width: 216.81px;
+    //     height: 216.81px;
+    //     transform: rotate(30deg);
+    //     position: absolute;
+    //     top: 35px;
+    //     left: -110px;
+    //     background: url(../assets/exchange-blick-top.png) center / contain no-repeat;
+    //     z-index: -1;
+    //     animation: slide-top 2s ease-in-out infinite alternate-reverse both;
+    // }
+    // &::after {
+    //     content: "";
+    //     width: 223.82px;
+    //     height: 226.08px;
+    //     transform: rotate(135deg);
+    //     position: absolute;
+    //     bottom: 30px;
+    //     right: -20%;
+    //     background: url(../assets/exchange-blick-bottom.png) center / contain no-repeat;
+    //     z-index: -1;
+    //     animation: slide-top 2s ease-in-out infinite alternate-reverse both;
+    // }
+}

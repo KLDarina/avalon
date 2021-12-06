@@ -1,0 +1,288 @@
+.button {
+    position: relative;
+    cursor: pointer;
+
+    &:hover {
+        .button__content {
+            background: linear-gradient(272.52deg, #ffa6fa 47.49%, #3c79d5 98.81%);
+            > span {
+                background: linear-gradient(272.52deg, #15121d 77.25%, #15121d 89.96%, #15121d 98.67%);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                color: #15121d;
+            }
+        }
+    }
+    &__gradient {
+        position: absolute;
+        width: calc(100% + 4px);
+        height: calc(100% + 4px);
+        top: -2px;
+        left: -2px;
+        background: linear-gradient(272.52deg, #ffa6fa 47.49%, #3c79d5 98.81%);
+        border-radius: 30px;
+    }
+    &__content {
+        background: #534589;
+        box-shadow: 0px 4px 97px rgba(255, 86, 246, 0.51);
+        border-radius: 30px;
+        padding: 15px 21px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        > span {
+            font-family: $font-family-title;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 22px;
+            color: $main-color;
+        }
+    }
+}
+
+.button--grad {
+    width: 100%;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    @media screen and (min-width: 767px) {
+        width: initial;
+    }
+    &:hover {
+        .button--grad__content {
+            background: linear-gradient(272.52deg, #ffa6fa 47.49%, #3c79d5 98.81%);
+            > span {
+                background: linear-gradient(272.52deg, #15121d 77.25%, #15121d 89.96%, #15121d 98.67%);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                color: #15121d;
+            }
+        }
+    }
+    &__gradient {
+        position: absolute;
+        width: calc(100% + 4px);
+        height: calc(100% + 4px);
+        top: -2px;
+        left: -2px;
+        background: linear-gradient(272.52deg, #ffa6fa 47.49%, #3c79d5 98.81%);
+        border-radius: 50px;
+    }
+    &__content {
+        background: linear-gradient(272.52deg, #534589 47.49%, #534589 98.81%);
+        box-shadow: 0px 4px 97px rgba(255, 86, 246, 0.51);
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        border-radius: 50px;
+        transition: all 0.3s ease-in-out;
+        @media screen and (min-width: 767px) {
+            padding: 33px 56px;
+        }
+
+        > span {
+            font-family: $font-family-title;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 29px;
+            background: linear-gradient(
+                272.52deg,
+                #ffffff 77.25%,
+                rgba(255, 166, 250, 0.43) 89.96%,
+                rgba(60, 121, 213, 0.56) 98.67%
+            );
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: $main-color;
+            transition: all 0.3s ease-in-out;
+            @media screen and (min-width: 767px) {
+                font-size: 30px;
+                line-height: 37px;
+            }
+        }
+    }
+}
+
+.button--applic {
+    position: relative;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 50px;
+    @media screen and (min-width: 767px) {
+        width: initial;
+        margin-top: 0;
+    }
+    &:hover {
+        .button--applic__content {
+            background: linear-gradient(272.52deg, #ffa6fa 47.49%, #3c79d5 98.81%);
+            > span {
+                background: linear-gradient(272.52deg, #15121d 77.25%, #15121d 89.96%, #15121d 98.67%);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                color: #15121d;
+            }
+        }
+    }
+    &__gradient {
+        position: absolute;
+        width: calc(100% + 4px);
+        height: calc(100% + 4px);
+        top: -2px;
+        left: -2px;
+        background: linear-gradient(272.52deg, #ffa6fa 47.49%, #3c79d5 98.81%);
+        border-radius: 50px;
+    }
+    &__content {
+        background: #534589;
+        box-shadow: 0px 4px 97px rgba(255, 86, 246, 0.51);
+        border-radius: 50px;
+        padding: 16px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @media screen and (min-width: 767px) {
+            padding: 32px 38px;
+        }
+        > span {
+            font-family: $font-family-title;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 29px;
+            color: $main-color;
+            @media screen and (min-width: 767px) {
+                font-size: 30px;
+                line-height: 37px;
+            }
+        }
+    }
+}
+
+.button--gologram {
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+    cursor: pointer;
+    width: 100%;
+    @media screen and (min-width: 767px) {
+        width: initial;
+    }
+    &:hover {
+        .button--gologram__content {
+            background-blend-mode: screen;
+            background: conic-gradient(
+                    from 180deg at 50% 50%,
+                    #ffffff 0deg,
+                    #000000 52.5deg,
+                    #ffffff 91.88deg,
+                    #000000 151.87deg,
+                    #ffffff 210deg,
+                    #000000 277.5deg,
+                    #ffffff 311.25deg,
+                    #000000 360deg
+                ),
+                conic-gradient(
+                    from 180deg at 50% 50%,
+                    #ffffff 0deg,
+                    #000000 52.5deg,
+                    #ffffff 91.88deg,
+                    #000000 151.87deg,
+                    #ffffff 210deg,
+                    #000000 277.5deg,
+                    #ffffff 311.25deg,
+                    #000000 360deg
+                ),
+                radial-gradient(
+                    89.7% 89.7% at 25.3% 6.2%,
+                    #6755d7 0%,
+                    #d3b0ff 20.35%,
+                    #efb0fe 40.18%,
+                    #abb3fc 61.5%,
+                    #adbaff 82.32%,
+                    #58c4f6 100%
+                );
+            > span {
+                color: #15121d;
+            }
+        }
+        .button--gologram__gradient {
+            background: radial-gradient(
+                    89.7% 89.7% at 25.3% 6.2%,
+                    #6755d7 0%,
+                    #d3b0ff 20.35%,
+                    #efb0fe 40.18%,
+                    #abb3fc 61.5%,
+                    #adbaff 82.32%,
+                    #58c4f6 100%
+                ),
+                conic-gradient(
+                    from 180deg at 50% 50%,
+                    #ffffff 0deg,
+                    #000000 52.5deg,
+                    #ffffff 91.88deg,
+                    #000000 151.87deg,
+                    #ffffff 210deg,
+                    #000000 277.5deg,
+                    #ffffff 311.25deg,
+                    #000000 360deg
+                ),
+                conic-gradient(
+                    from 180deg at 50% 50%,
+                    #ffffff 0deg,
+                    #000000 52.5deg,
+                    #ffffff 91.88deg,
+                    #000000 151.87deg,
+                    #ffffff 210deg,
+                    #000000 277.5deg,
+                    #ffffff 311.25deg,
+                    #000000 360deg
+                );
+        }
+    }
+    &__gradient {
+        position: absolute;
+        width: calc(100% + 4px);
+        height: calc(100% + 4px);
+        top: -2px;
+        left: -2px;
+        background: linear-gradient(272.52deg, #ffa6fa 47.49%, #3c79d5 98.81%);
+        border-radius: 50px;
+    }
+    &__content {
+        background: #534589;
+        box-shadow: 0px 4px 97px rgba(255, 86, 246, 0.51);
+        border-radius: 50px;
+        padding: 16px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @media screen and (min-width: 767px) {
+            padding: 33px 67px;
+        }
+        > span {
+            font-family: $font-family-title;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 29px;
+            color: $main-color;
+            white-space: nowrap;
+            @media screen and (min-width: 767px) {
+                font-size: 30px;
+                line-height: 37px;
+                white-space: initial;
+            }
+        }
+    }
+}

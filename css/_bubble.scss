@@ -1,0 +1,185 @@
+.bubble {
+    position: absolute;
+    // background: url(../assets/bubble.png) center / contain no-repeat;
+    z-index: -1;
+    display: none;
+
+    @media screen and (min-width: 767px) {
+        display: block;
+    }
+
+    &-1 {
+        top: 140px;
+        left: 5%;
+        width: 292.63px;
+        height: 219.03px;
+        transform: rotate(15deg);
+        background: url(../assets/luna.png) center / contain no-repeat;
+        // animation: rotate-bubble 5s linear infinite;
+    }
+
+    &-2 {
+        top: 14%;
+        right: -13%;
+        width: 615.59px;
+        height: 304.75px;
+        background: url(../assets/saturn.png) center / contain no-repeat;
+        // animation: rotate-bubble-small 2s linear infinite;
+    }
+
+    &-3 {
+        // top: 20%;
+        // left: -1%;
+        // width: 341.88px;
+        // height: 255.89px;
+        // transform: rotate(-15deg);
+        // background: url(../assets/luna.png) center / contain no-repeat;
+        // animation: rotate-bubble 3s linear infinite;
+    }
+
+    &-4 {
+        width: 341.88px;
+        height: 255.89px;
+        transform: rotate(-15deg);
+        background: url(../assets/luna.png) center / contain no-repeat;
+        // width: 233px;
+        // height: 233px;
+        right: -7%;
+        top: 28%;
+        // background: url(../assets/neptun.png) center / contain no-repeat;
+        // animation: rotate-bubble-small 2s linear infinite;
+    }
+
+    &-5 {
+        width: 233px;
+        height: 233px;
+        // width: 216.81px;
+        // height: 216.81px;
+        left: 3%;
+        top: 50%;
+        background: url(../assets/neptun.png) center / contain no-repeat;
+        // animation: rotate-bubble-small 4s linear infinite;
+    }
+
+    &-6 {
+        width: 478.23px;
+        height: 236.75px;
+        right: -12%;
+        bottom: 40%;
+        background: url(../assets/saturn.png) center / contain no-repeat;
+        // animation: rotate-bubble 4s linear infinite;
+    }
+
+    &-7 {
+        width: 189.43px;
+        height: 141.78px;
+        left: -1%;
+        bottom: 30%;
+        transform: rotate(-15deg);
+        background: url(../assets/neptun.png) center / contain no-repeat;
+        // animation: rotate-bubble-small 3s linear infinite;
+    }
+
+    &-8 {
+        width: 605.49px;
+        height: 299.75px;
+        left: 3%;
+        bottom: 7%;
+        background: url(../assets/saturn.png) center / contain no-repeat;
+        // animation: rotate-bubble-small 2s linear infinite;
+    }
+}
+
+@media screen and (max-height: 930px) {
+    .bubble-1 {
+        top: 126px;
+        left: 0;
+    }
+
+    .bubble-2 {
+        top: 11%;
+        right: -13%;
+        width: 515.59px;
+        height: 204.75px;
+    }
+
+    .bubble-4 {
+        width: 241.88px;
+        height: 155.89px;
+        right: -7%;
+        top: 28%;
+    }
+
+    .bubble-5 {
+        width: 133px;
+        height: 133px;
+        left: 3%;
+        top: 51%;
+    }
+
+    .bubble-6 {
+        width: 378.23px;
+        height: 136.75px;
+        right: -12%;
+        bottom: 42%;
+    }
+
+    .bubble-7 {
+        left: -4%;
+        bottom: 28%;
+    }
+
+    .bubble-8 {
+        width: 505.49px;
+        height: 199.75px;
+        left: 3%;
+        bottom: 8%;
+    }
+}
+
+@media screen and (max-width: 1120px) {
+    .bubble-1 {
+        top: 126px;
+        left: 0;
+    }
+
+    .bubble-2 {
+        top: 11%;
+        right: -13%;
+        width: 515.59px;
+        height: 204.75px;
+    }
+
+    .bubble-4 {
+        width: 241.88px;
+        height: 155.89px;
+        right: -7%;
+        top: 28%;
+    }
+
+    .bubble-5 {
+        width: 133px;
+        height: 133px;
+        left: 3%;
+        top: 51%;
+    }
+
+    .bubble-6 {
+        width: 378.23px;
+        height: 136.75px;
+        right: -12%;
+        bottom: 42%;
+    }
+
+    .bubble-7 {
+        left: -4%;
+        bottom: 28%;
+    }
+
+    .bubble-8 {
+        width: 505.49px;
+        height: 199.75px;
+        left: 3%;
+        bottom: 8%;
+    }
+}

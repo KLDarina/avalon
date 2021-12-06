@@ -1,0 +1,161 @@
+.currencies {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    &__content {
+        margin-top: 20px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: inherit;
+        @media screen and (min-width: 767px) {
+            margin-top: 40px;
+        }
+    }
+    &__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100%;
+        border-right: 1px solid #423254;
+        border-bottom: 1px solid #423254;
+        position: relative;
+        width: calc(100% / 2);
+        min-height: 94px;
+
+        @media screen and (min-width: 1120px) {
+            width: calc(100% / 4);
+            min-height: 242px;
+        }
+
+        @media screen and (min-width: 767px) and (max-width: 1119px) {
+            width: calc(100% / 3);
+            min-height: 242px;
+        }
+
+        @media screen and (min-width: 767px) {
+            flex-direction: row;
+        }
+
+        &:hover {
+            > .bg {
+                opacity: 1;
+            }
+            > span {
+                color: $main-color;
+            }
+        }
+
+        &:nth-child(2n) {
+            @media screen and (max-width: 766px) {
+                border-right: none;
+            }
+        }
+
+        &:nth-child(4n) {
+            @media screen and (min-width: 1120px) {
+                border-right: none;
+            }
+        }
+
+        &:nth-child(3n) {
+            @media screen and (min-width: 767px) and (max-width: 1119px) {
+                border-right: none;
+            }
+        }
+
+        &:nth-child(9),
+        &:nth-child(10),
+        &:nth-child(11),
+        &:nth-child(12) {
+            @media screen and (min-width: 1120px) {
+                border-bottom: none;
+            }
+        }
+
+        &:nth-child(10),
+        &:nth-child(11),
+        &:nth-child(12) {
+            @media screen and (min-width: 767px) and (max-width: 1119px) {
+                border-bottom: none;
+            }
+        }
+
+        &:nth-child(11),
+        &:nth-child(12) {
+            @media screen and (max-width: 766px) {
+                border-bottom: none;
+            }
+        }
+
+        > .bg {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 100%;
+            height: 100%;
+            transform: translate(-50%, 0);
+            z-index: -1;
+            opacity: 0;
+            transition: all 0.3s ease-in-out;
+            > img {
+                width: 100%;
+            }
+        }
+
+        > img {
+            width: 24px;
+            margin-bottom: 8px;
+            @media screen and (min-width: 767px) {
+                margin-right: 20px;
+                width: initial;
+                margin-bottom: 0;
+            }
+        }
+        > span {
+            font-family: $font-family-text;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 24px;
+            color: #90879b;
+            transition: all 0.3s ease-in-out;
+            @media screen and (min-width: 1700px) {
+                font-size: 40px;
+                line-height: 48px;
+            }
+        }
+    }
+    &__buttons {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        @media screen and (min-width: 767px) {
+            flex-direction: row;
+            margin-top: 60px;
+        }
+        > a:first-child {
+            margin-bottom: 12px;
+            @media screen and (min-width: 767px) {
+                margin-right: 10px;
+                margin-bottom: 0;
+            }
+        }
+        > a:last-child {
+            @media screen and (min-width: 767px) {
+                margin-left: 10px;
+            }
+        }
+    }
+    &__title {
+        text-align: center;
+        @media screen and (min-width: 767px) {
+            text-align: left;
+        }
+    }
+}

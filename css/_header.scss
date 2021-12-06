@@ -1,0 +1,267 @@
+.header {
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(101px);
+    border-radius: 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px $padding-mob;
+
+    @media screen and (min-width: 2100px) {
+        padding: 12px $padding-xxl;
+    }
+    @media screen and (min-width: 1720px) and (max-width: 2099px) {
+        padding: 12px $padding-xl;
+    }
+    @media screen and (min-width: 1350px) and (max-width: 1719px) {
+        padding: 12px $padding-lg;
+    }
+    @media screen and (min-width: 1120px) and (max-width: 1349px) {
+        padding: 12px $padding-md;
+    }
+    @media screen and (min-width: 767px) and (max-width: 1119px) {
+        padding: 12px $padding-tablet;
+    }
+    &:before {
+        content: "";
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(113.62deg, #616161 0%, rgba(255, 255, 255, 0) 96.25%);
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+    }
+    &__left,
+    &__right {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    &__logo {
+        text-decoration: none;
+        display: inline-block;
+        width: 99px;
+
+        @media screen and (min-width: 1120px) {
+            width: 249px;
+        }
+        @media screen and (min-width: 767px) and (max-width: 1119px) {
+            width: 160px;
+        }
+
+        @media screen and (min-width: 1550px) {
+            margin-right: 160px;
+        }
+        @media screen and (min-width: 1100px) and (max-width: 1549px) {
+            margin-right: 50px;
+        }
+        > img {
+            width: 100%;
+        }
+    }
+    &__navigation {
+        display: none;
+        @media screen and (min-width: 1120px) {
+            display: block;
+        }
+        ul {
+            list-style: none;
+            margin-block-start: 0;
+            margin-block-end: 0;
+            padding-inline-start: 0;
+            li {
+                display: inline-block;
+                margin-left: 80px;
+                @media screen and (min-width: 1550px) {
+                    margin-left: 80px;
+                }
+                @media screen and (min-width: 1350px) and (max-width: 1549px) {
+                    margin-left: 50px;
+                }
+                @media screen and (min-width: 1120px) and (max-width: 1349px) {
+                    margin-left: 30px;
+                }
+                &:first-child {
+                    margin-left: 0;
+                }
+                a {
+                    text-decoration: none;
+                    font-family: $font-family-text;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 20px;
+                    color: $header-color;
+                    background: conic-gradient(from 180deg at 50% 50%, #ffffff 0deg, #ffffff 360deg);
+                    background-blend-mode: screen;
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    transition: all 0.3s ease-in-out;
+                    &:hover {
+                        background: conic-gradient(
+                                from 180deg at 50% 50%,
+                                #ffffff 0deg,
+                                #000000 52.5deg,
+                                #ffffff 91.88deg,
+                                #000000 151.87deg,
+                                #ffffff 210deg,
+                                #000000 277.5deg,
+                                #ffffff 311.25deg,
+                                #000000 360deg
+                            ),
+                            conic-gradient(
+                                from 180deg at 50% 50%,
+                                #ffffff 0deg,
+                                #000000 52.5deg,
+                                #ffffff 91.88deg,
+                                #000000 151.87deg,
+                                #ffffff 210deg,
+                                #000000 277.5deg,
+                                #ffffff 311.25deg,
+                                #000000 360deg
+                            ),
+                            radial-gradient(
+                                89.7% 89.7% at 25.3% 6.2%,
+                                #6755d7 0%,
+                                #d3b0ff 20.35%,
+                                #efb0fe 40.18%,
+                                #abb3fc 61.5%,
+                                #adbaff 82.32%,
+                                #58c4f6 100%
+                            );
+                        color: #6755d7;
+                        background-blend-mode: screen;
+                        background-clip: text;
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                    }
+                    &.active {
+                        font-weight: 900;
+                        color: #FFFFFF;
+                    }
+                }
+            }
+        }
+    }
+    &__button {
+        display: none;
+        @media screen and (min-width: 1120px) {
+            display: block;
+        }
+    }
+    &__burger {
+        display: block;
+        @media screen and (min-width: 1120px) {
+            display: none;
+        }
+    }
+}
+
+.languages {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    margin-right: 10px;
+    @media screen and (min-width: 767px) {
+        margin-right: 40px;
+    }
+    &__current {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        cursor: pointer;
+        @media screen and (min-width: 767px) {
+            flex-direction: column;
+        }
+        > div {
+            position: relative;
+            > svg {
+                &:last-child {
+                    position: absolute;
+                    z-index: 2;
+                    top: 0;
+                    left: 0;
+                    opacity: 0;
+                }
+            }
+        }
+        span {
+            font-family: $font-family-title;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 20px;
+            color: $header-color;
+            @media screen and (min-width: 767px) {
+                font-size: 14px;
+            }
+        }
+        &:hover {
+            > span {
+                background: linear-gradient(272.52deg, #ffa6fa 47.49%, #3c79d5 98.81%);
+                color: #ffa6fa;
+                background-blend-mode: screen;
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+            > div {
+                > svg {
+                    &:last-child {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+    &__block {
+        position: absolute;
+        top: calc(100% + 12px);
+        left: 50%;
+        transform: translate(-50%, 0);
+        padding: 12px;
+        background: #2c2a34;
+        border: 2px solid #ffffff;
+        border-radius: 6px;
+        opacity: 0;
+        visibility: hidden;
+        a {
+            display: inline-block;
+            margin-bottom: 10px;
+            font-family: $font-family-title;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 20px;
+            color: $header-color;
+            text-decoration: none;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            &:hover {
+                background: linear-gradient(272.52deg, #ffa6fa 47.49%, #3c79d5 98.81%);
+                color: #ffa6fa;
+                background-blend-mode: screen;
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+    }
+    &.open {
+        .languages__block {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+}

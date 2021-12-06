@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avalon</title>
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/png">
+    <link rel="stylesheet" href="./fonts/gilroy/stylesheet.css">
+    <link rel="stylesheet" href="./fonts/montserrat/stylesheet.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="bubble bubble-1"></div>
+        <div class="bubble bubble-2"></div>
+        <div class="bubble bubble-3"></div>
+        <div class="bubble bubble-4"></div>
+        <div class="bubble bubble-5"></div>
+        <div class="bubble bubble-6"></div>
+        <div class="bubble bubble-7"></div>
+        <div class="bubble bubble-8"></div>
+        <div class="bubble bubble-9"></div>
+        <div class="bg"></div>
+        <div class="stars"></div>
+        <div class="tree">
+            <img src="./assets/tree.png" alt="">
+        </div>
+        <header class="header">
+            <div class="header__left">
+                <a href="./index.html" class="header__logo">
+                    <img src="./assets/logo.svg" alt="">
+                </a>
+                <nav class="header__navigation">
+                    <ul>
+                        <li>
+                            <a href="#about">О проекте</a>
+                        </li>
+                        <li>
+                            <a href="#advantages">Преимущества</a>
+                        </li>
+                        <li>
+                            <a href="#currencies">Валюты</a>
+                        </li>
+                        <li>
+                            <a href="#contacts">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header__right">
+                <div class="header__languages languages">
+                    <div class="languages__current" id="lang">
+                        <span>RU</span>
+                        <div>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13 6L8 11L3 6" stroke="white" stroke-width="1.7" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13 6L8 11L3 6" stroke="url(#paint0_linear_180:6917)" stroke-width="1.7"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <defs>
+                                    <linearGradient id="paint0_linear_180:6917" x1="3" y1="11.0875" x2="3.1193"
+                                        y2="5.67521" gradientUnits="userSpaceOnUse">
+                                        <stop offset="0.473958" stop-color="#FFA6FA" />
+                                        <stop offset="0.96875" stop-color="#3C79D5" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="languages__block">
+                        <a href="#">EN</a>
+                        <a href="#">DE</a>
+                        <a href="#">SPA</a>
+                        <a href="#">HI</a>
+                        <a href="#">VI</a>
+                        <a href="#">IT</a>
+                        <a href="#">KAZ</a>
+                        <a href="#">CHI</a>
+                    </div>
+                </div>
+                <div class="header__button button for-popup">
+                    <div class="button__gradient"></div>
+                    <div class="button__content">
+                        <span>Начать</span>
+                    </div>
+                </div>
+                <div class="header__burger" id="burger">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M4 13C4.55228 13 5 12.5523 5 12C5 11.4477 4.55228 11 4 11C3.44772 11 3 11.4477 3 12C3 12.5523 3.44772 13 4 13Z"
+                            fill="white" />
+                        <path
+                            d="M20.06 11H7.94C7.42085 11 7 11.4209 7 11.94V12.06C7 12.5791 7.42085 13 7.94 13H20.06C20.5791 13 21 12.5791 21 12.06V11.94C21 11.4209 20.5791 11 20.06 11Z"
+                            fill="white" />
+                        <path
+                            d="M20.06 16H3.94C3.42085 16 3 16.4209 3 16.94V17.06C3 17.5791 3.42085 18 3.94 18H20.06C20.5791 18 21 17.5791 21 17.06V16.94C21 16.4209 20.5791 16 20.06 16Z"
+                            fill="white" />
+                        <path
+                            d="M20.06 6H3.94C3.42085 6 3 6.42085 3 6.94V7.06C3 7.57915 3.42085 8 3.94 8H20.06C20.5791 8 21 7.57915 21 7.06V6.94C21 6.42085 20.5791 6 20.06 6Z"
+                            fill="white" />
+                    </svg>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <section class="exchange">
+                <div class="blur--blue"></div>
+                <div class="blur-top--pink"></div>
+                <div class="blur-bottom--pink"></div>
+                <div class="exchange__content">
+                    <h1 class="exchange__title title title--h1">Avalon Exchange</h1>
+                    <p class="exchange__text text">
+                        Современный сервис крипто-валютного обмена для блокчейн стартапов.
+                        Платформа, которая позволяет новым амбициозным проектам выходить на мировой рынок легко и
+                        просто.
+                    </p>
+                    <div class="exchange__button button--grad for-popup">
+                        <div class="button--grad__gradient"></div>
+                        <div class="button--grad__content">
+                            <span>Начать</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="exchange__visual">
+                    <img src="./assets/block-1.png" alt="">
+                </div>
+            </section>
+            <section class="about">
+                <div class="about__block-1" id="about">
+                    <div class="blur--blue"></div>
+                    <div class="blur-top--pink"></div>
+                    <div class="blur-bottom--pink"></div>
+                    <h2 class="about__title title title--h2">О проекте</h2>
+                    <div class="about__content">
+                        <div class="about__situation">
+                            <h3 class="title title--h3">Текущая ситуация</h3>
+                            <p>Мир криптовалют стремительно развивается.</p>
+                            <p>Если в 2017 году был бум простых ICO, 90 % которых просто исчезали с деньгами инвесторов,
+                                то за последние несколько лет появились технологии De-Fi, Cross-Fi, NFT и много отличных
+                                токенов на базе блокчейн-технологий.
+                            </p>
+                            <p>Чтобы новый токен появился хотя бы в топ-1000, ему необходимо пройти долгий и
+                                дорогостоящий путь. И даже в этом случае право на успех ему не гарантировано.
+                            </p>
+                        </div>
+                        <div class="about__vision">
+                            <h3 class="title title--h3">Наше видение</h3>
+                            <div>Стоимость токена определяется спросом на него. Чем выше спрос, тем дороже монета.
+                            </div>
+                            <div>Существенный недостаток начинающих крипто-энтузиастов и создателей новых
+                                блокчейн-проектов заключается в том, что все они без исключения представляют собой
+                                замкнутые экосистемами, не жизнеспособные за пределами своих сообществ. То есть спрос на
+                                токен ограничен только теми людьми, кто “в теме” и, как следствие, проект не может
+                                собрать необходимый пул инвестиций и стоимость токена не растет. Но есть другие
+                                компании, которые имеют многочисленное комьюнити без продукта и новых идей.
+                                Тысячи, десятки, а то и сотни тысяч людей, объединенные когда-то в крипто-сообщества
+                                просто скучают по новыми идеями.
+                            </div>
+                            <div>Объединение людей из различных сообществ на одной платформе способствует обмену
+                                энергиями и развитию каждого отдельно взятого проекта. Таким образом увеличивается спрос
+                                и стоимость представленных на платформе токенов.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about__idea">
+                        <p>В этом и заключена основная идея и миссия AVALON EXCHANGE - объединить различные крипто
+                            проекты на одной площадке, чтобы придать им дополнительный импульс и вывести их на новый
+                            уровень развития благодаря обращению токенов этих компаний в свободной рыночной среде.
+                        </p>
+                        <div>
+                            <img src="./assets/idea-bg.png" alt="">
+                            <img src="./assets/idea-tree.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="about__block-2" id="advantages">
+                    <div class="blur--blue"></div>
+                    <div class="blur-top--pink"></div>
+                    <div class="blur-bottom--pink"></div>
+                    <div class="about__advantage">
+                        <div class="about__advantage-item">
+                            <h4 class="title title--h4">Преимущества</h4>
+                            <p>AVALON EXCHANGE – это высоко-технологичная и современная крипто биржа.</p>
+                        </div>
+                        <div class="about__advantage-item">
+                            <img src="./assets/advantage-1.png" alt="">
+                            <div>Реферальная программа. Пригласи друзей на биржу AVALON и получи до 20% от торговых
+                                комиссий биржи.</div>
+                        </div>
+                        <div class="about__advantage-item">
+                            <img src="./assets/advantage-2.png" alt="">
+                            <div>Биржа прошла проверку на отказоустойчивость и аудитирование системы безопасного
+                                хранения крипто-активов.
+                            </div>
+                        </div>
+                        <div class="about__advantage-item">
+                            <img src="./assets/advantage-3.png" alt="">
+                            <div>Торговый API</div>
+                        </div>
+                        <div class="about__advantage-item">
+                            <img src="./assets/advantage-4.png" alt="">
+                            <div>Аналитико-статистический модуль торгов с выбором периода от часа до года
+                            </div>
+                        </div>
+                        <div class="about__advantage-item">
+                            <img src="./assets/advantage-5.png" alt="">
+                            <div>Поддержка Market / Limit ордеров
+                            </div>
+                        </div>
+                        <div class="about__advantage-item">
+                            <img src="./assets/advantage-6.png" alt="">
+                            <div>Пул ордеров (биржевые стаканы)
+                            </div>
+                        </div>
+                        <div class="about__advantage-item">
+                            <img src="./assets/advantage-7.png" alt="">
+                            <div>Удобные графики торгов с возможность настроить индивидуальный дизайн под каждого
+                                пользователя
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about__block-3">
+                    <div class="about__exchange">
+                        <h2 class="title title--h2">Avalon Exchange</h2>
+                        <ol class="about__list">
+                            <li class="about__list-item">
+                                <div class="number">1.</div>
+                                <div class="content">
+                                    <div>Это удобный и доступный сервис </div>
+                                    <p>Это удобный и доступный сервис для покупки, хранения, торгов и обмена токенов.
+                                        Сервис
+                                        рассчитан как на новичков, так и на продвинутых пользователей. </p>
+                                </div>
+
+                            </li>
+                            <li class="about__list-item">
+                                <div class="number">2.</div>
+                                <div class="content">
+                                    <div>Это новейший маркетинговый инструмент </div>
+                                    <p>Это новейший маркетинговый инструмент для компаний, заинтересованных в развитии
+                                        своего бизнеса: популяризации своих ценностей, возможности обращения к своей
+                                        непосредственной целевой аудитории, укреплении внутренней криптовалюты своего
+                                        сообщества. </p>
+                                </div>
+                            </li>
+                            <li class="about__list-item">
+                                <div class="number">3.</div>
+                                <div class="content">
+                                    <div>Это супер возможность для получения дохода </div>
+                                    <p>Это супер возможность для получения дохода – приобретение токенов растущих
+                                        компаний
+                                        по минимальной цене с целью продажи их на пике роста, а также возможность
+                                        спекулировать на бирже при минимальных вложениях. </p>
+                                </div>
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="about__visual">
+                        <!-- <img src="./assets/exchange.png" alt=""> -->
+                        <div class="slots">
+                            <table>
+                                <tr>
+                                    <td></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="application application--1">
+                <div class="application__content">
+                    <h2 class="application__title title title--h2">Оставьте заявку на листинг ваших монет</h2>
+                    <span class="application__text">Оставьте заявку и мы с вами свяжемся</span>
+                </div>
+                <div class="application__button button--applic for-popup">
+                    <div class="button--applic__gradient"></div>
+                    <div class="button--applic__content">
+                        <span>Оставить заявку</span>
+                    </div>
+                </div>
+            </div>
+            <section class="currencies" id="currencies">
+                <div class="blur--blue"></div>
+                <div class="blur-top--pink"></div>
+                <div class="blur-bottom--pink"></div>
+                <h2 class="currencies__title title title--h2">Валюты, комиссии, и лимиты</h2>
+                <div class="currencies__content">
+                    <div class="currencies__item">
+                        <div class="bg">
+                            <img src="./assets/currencies-bg.png" alt="">
+                        </div>
+                        <img src="./assets/Bitcoin.png" alt="">
+                        <span>Bitcoin</span>
+                    </div>
+                    <div class="currencies__item">
+                        <div class="bg">
+                            <img src="./assets/currencies-bg.png" alt="">
+                        </div>
+                        <img src="./assets/Ethereum.png" alt="">
+                        <span>Etherium</span>
+                    </div>
+                    <div class="currencies__item">
+                        <div class="bg">
+                            <img src="./assets/currencies-bg.png" alt="">
+                        </div>
+                        <img src="./assets/BitcoinCash.png" alt="">
+                        <span>Bitcoin Cash</span>
+                    </div>
+                    <div class="currencies__item">
+                        <div class="bg">
+                            <img src="./assets/currencies-bg.png" alt="">
+                        </div>
+                        <img src="./assets/Litecoin.png" alt="">
+                        <span>Litecoin</span>
+                    </div>
+                    <div class="currencies__item">
+                        <div class="bg">
+                            <img src="./assets/currencies-bg.png" alt="">
+                        </div>
+                        <img src="./assets/Tether.png" alt="">
+                        <span>Tether</span>
+                    </div>
+                    <div class="currencies__item">
+                        <div class="bg">
+                            <img src="./assets/currencies-bg.png" alt="">
+                        </div>
+                        <img src="./assets/USDCoin.png" alt="">
+                        <span>USD Coin</span>
+                    </div>
+                    <div class="currencies__item">
+                        <div class="bg">
+                            <img src="./assets/currencies-bg.png" alt="">
+                        </div>
+                        <img src="./assets/EOS.png" alt="">
+                        <span>EOS</span>
+                    </div>
+                    <div class="currencies__item">
+                        <div class="bg">
+                            <img src="./assets/currencies-bg.png" alt="">
+                        </div>
+                        <img src="./assets/Solana.png" alt="">
+                        <span>Chainlink</span>
+                    </div>
+                    <div class="currencies__item">
+                        <div class="bg">
+                            <img src="./assets/currencies-bg.png" alt="">
+                        </div>
+                        <img src="./assets/Dai.png" alt="">
+                        <span>DAI</span>
+                    </div>
+                    <div class="currencies__item">
+                        <div class="bg">
+                            <img src="./assets/currencies-bg.png" alt="">
+                        </div>
+                        <img src="./assets/Uniswap.png" alt="">
+                        <span>Uniswap</span>
+                    </div>
+                    <div class="currencies__item">
+                        <div class="bg">
+                            <img src="./assets/currencies-bg.png" alt="">
+                        </div>
+                        <img src="./assets/WAX.png" alt="">
+                        <span>WAX</span>
+                    </div>
+                    <div class="currencies__item">
+                        <div class="bg">
+                            <img src="./assets/currencies-bg.png" alt="">
+                        </div>
+                        <img src="./assets/CWD.png" alt="">
+                        <span>CWD</span>
+                    </div>
+                </div>
+                <div class="currencies__buttons">
+                    <a href="#" target="_blank" class="button--gologram">
+                        <div class="button--gologram__gradient"></div>
+                        <div class="button--gologram__content">
+                            <span>Торговые комиссии</span>
+                        </div>
+                    </a>
+                    <a href="#" target="_blank" class="button--gologram">
+                        <div class="button--gologram__gradient"></div>
+                        <div class="button--gologram__content">
+                            <span>Депозиты и вывод</span>
+                        </div>
+                    </a>
+
+                </div>
+            </section>
+            <div class="application application--2">
+                <div class="application__content">
+                    <h2 class="application__title title title--h2">У вас есть опыт трейдинга или вы провайдер
+                        ликвидности?</h2>
+                    <span class="application__text">Оставьте заявку и мы с вами свяжемся</span>
+                </div>
+                <div class="application__button button--applic for-popup">
+                    <div class="button--applic__gradient"></div>
+                    <div class="button--applic__content">
+                        <span>Оставить заявку</span>
+                    </div>
+                </div>
+            </div>
+            <div class="partnerships">
+                <div class="blur--blue"></div>
+                <div class="blur-top--pink"></div>
+                <div class="blur-bottom--pink"></div>
+                <div class="partnerships__left">
+                    <img src="./assets/monet.png" alt="">
+                    <h2 class="partnerships__title title title--h2">Наши партнеры</h2>
+                    <span>AVALON EXCHANGE открыта для партнерства</span>
+                </div>
+                <div class="partnerships__right">
+                    <span>Мы приглашаем заинтересованных в сотрудничестве криптостартапы.</span>
+                    <div>
+                        <a href="#">
+                            <img src="./assets/mineplex.png" alt="">
+                            <img src="./assets/mineplex-hov.png" alt="">
+                        </a>
+                        <a href="##">
+                            <img src="./assets/cac.png" alt="">
+                            <img src="./assets/cac.png" alt="">
+                        </a>
+
+                        <a href="####">
+                            <img src="./assets/cwd-partner.png" alt="">
+                            <img src="./assets/cwd-partner-hov.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="application application--3">
+                <div class="application__content">
+                    <h2 class="application__title title title--h2">Оставьте заявку на партнерство</h2>
+                    <span class="application__text">Оставьте заявку и мы с вами свяжемся</span>
+                </div>
+                <div class="application__button button--applic for-popup">
+                    <div class="button--applic__gradient"></div>
+                    <div class="button--applic__content">
+                        <span>Оставить заявку</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer" id="contacts">
+            <div class="blur--blue"></div>
+            <div class="blur-top--pink"></div>
+            <div class="blur-bottom--pink"></div>
+            <div class="footer__top">
+                <div class="footer__left">
+                    <img src="./assets/logo.svg" alt="" class="footer__logo">
+                    <nav class="footer__navigation">
+                        <ul>
+                            <li><a href="#" target="_blank">Пользовательское соглашение </a></li>
+                            <li><a href="#" target="_blank">Правила и процедуры AML/KYC</a></li>
+                            <li><a href="#" target="_blank">Политика конфиденциальности</a></li>
+                            <li><a href="#" target="_blank">ЧАВо</a></li>
+                            <li><a href="#" target="_blank">Техподдержка </a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer__right">
+                    <a class="footer__location footer__link">Avalon Exchange Ltd.</a>
+                    <a class="footer__location footer__link">Thalassa Beach Resort, Block 8, Office 8G-04</a>
+                    <a class="footer__location footer__link">Çayırova, Bafra, 99920, North Cyprus</a>
+                    <a href="mailto:info@avalon.exchange" class="footer__email footer__link">info@avalon.exchange</a>
+                    <a href="tel:905338815077" class="footer__phone footer__link">+90 (533) 88 150 77</a>
+                    <div class="footer__social">
+                        <a href="#" target="_blank">
+                            <img src="./assets/twitter.png" alt="">
+                            <img src="./assets/twitter-hov.png" alt="">
+                        </a>
+                        <a href="##" target="_blank">
+                            <img src="./assets/facebook.png" alt="">
+                            <img src="./assets/facebook-hov.png" alt="">
+                        </a>
+                        <a href="###" target="_blank">
+                            <img src="./assets/instagram.png" alt="">
+                            <img src="./assets/instagram-hov.png" alt="">
+                        </a>
+                        <a href="#####" target="_blank">
+                            <img src="./assets/linkedin.png" alt="">
+                            <img src="./assets/linkedin-hov.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <a href="#" target="_blank" class="footer__amprise">
+                    <span>Design by</span>
+                    <svg width="134" height="22" viewBox="0 0 134 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g opacity="0.5">
+                            <path
+                                d="M11.0833 2.72849e-05C8.89125 2.72849e-05 6.7484 0.645166 4.92576 1.85386C3.10312 3.06255 1.68254 4.78051 0.843672 6.7905C0.00480166 8.80048 -0.214684 11.0122 0.212968 13.146C0.64062 15.2798 1.6962 17.2398 3.24623 18.7782C4.79626 20.3166 6.77112 21.3642 8.92107 21.7886C11.071 22.2131 13.2995 21.9952 15.3247 21.1627C17.3499 20.3301 19.0809 18.9202 20.2988 17.1113C21.5166 15.3023 22.1666 13.1756 22.1666 11C22.1699 9.55457 21.8854 8.12273 21.3296 6.78669C20.7737 5.45066 19.9575 4.23674 18.9277 3.21466C17.8978 2.19257 16.6747 1.38244 15.3286 0.83078C13.9824 0.279121 12.5397 -0.00319557 11.0833 2.72849e-05ZM11.0833 19.8652C9.44931 19.8645 7.84764 19.4131 6.45706 18.5615L11.0833 9.9652L13.2302 13.9578H10.9807C10.7011 13.9563 10.4266 14.0316 10.1875 14.1754C9.94843 14.3193 9.75411 14.5259 9.62607 14.7726L9.03907 15.9378H14.3057L15.7137 18.5533C14.3209 19.4044 12.7189 19.8583 11.0833 19.8652ZM17.3885 17.2782L12.8731 9.09335C12.704 8.76086 12.4452 8.48145 12.1256 8.28625C11.806 8.09104 11.4381 7.98768 11.0628 7.98768C10.6875 7.98768 10.3196 8.09104 10 8.28625C9.68039 8.48145 9.42163 8.76086 9.25252 9.09335L4.73709 17.2782C3.47841 16.0381 2.61917 14.455 2.26836 12.7296C1.91755 11.0042 2.09098 9.21423 2.76666 7.58679C3.44233 5.95935 4.5898 4.56774 6.06352 3.58849C7.53724 2.60923 9.2708 2.08645 11.0443 2.08645C12.8178 2.08645 14.5514 2.60923 16.0251 3.58849C17.4988 4.56774 18.6463 5.95935 19.322 7.58679C19.9977 9.21423 20.1711 11.0042 19.8203 12.7296C19.4695 14.455 18.6102 16.0381 17.3516 17.2782H17.3885Z"
+                                fill="url(#paint0_radial_160:7289)" />
+                            <path
+                                d="M11.0833 2.72849e-05C8.89125 2.72849e-05 6.7484 0.645166 4.92576 1.85386C3.10312 3.06255 1.68254 4.78051 0.843672 6.7905C0.00480166 8.80048 -0.214684 11.0122 0.212968 13.146C0.64062 15.2798 1.6962 17.2398 3.24623 18.7782C4.79626 20.3166 6.77112 21.3642 8.92107 21.7886C11.071 22.2131 13.2995 21.9952 15.3247 21.1627C17.3499 20.3301 19.0809 18.9202 20.2988 17.1113C21.5166 15.3023 22.1666 13.1756 22.1666 11C22.1699 9.55457 21.8854 8.12273 21.3296 6.78669C20.7737 5.45066 19.9575 4.23674 18.9277 3.21466C17.8978 2.19257 16.6747 1.38244 15.3286 0.83078C13.9824 0.279121 12.5397 -0.00319557 11.0833 2.72849e-05ZM11.0833 19.8652C9.44931 19.8645 7.84764 19.4131 6.45706 18.5615L11.0833 9.9652L13.2302 13.9578H10.9807C10.7011 13.9563 10.4266 14.0316 10.1875 14.1754C9.94843 14.3193 9.75411 14.5259 9.62607 14.7726L9.03907 15.9378H14.3057L15.7137 18.5533C14.3209 19.4044 12.7189 19.8583 11.0833 19.8652ZM17.3885 17.2782L12.8731 9.09335C12.704 8.76086 12.4452 8.48145 12.1256 8.28625C11.806 8.09104 11.4381 7.98768 11.0628 7.98768C10.6875 7.98768 10.3196 8.09104 10 8.28625C9.68039 8.48145 9.42163 8.76086 9.25252 9.09335L4.73709 17.2782C3.47841 16.0381 2.61917 14.455 2.26836 12.7296C1.91755 11.0042 2.09098 9.21423 2.76666 7.58679C3.44233 5.95935 4.5898 4.56774 6.06352 3.58849C7.53724 2.60923 9.2708 2.08645 11.0443 2.08645C12.8178 2.08645 14.5514 2.60923 16.0251 3.58849C17.4988 4.56774 18.6463 5.95935 19.322 7.58679C19.9977 9.21423 20.1711 11.0042 19.8203 12.7296C19.4695 14.455 18.6102 16.0381 17.3516 17.2782H17.3885Z"
+                                fill="url(#paint1_angular_160:7289)" style="mix-blend-mode:difference" />
+                            <path
+                                d="M11.0833 2.72849e-05C8.89125 2.72849e-05 6.7484 0.645166 4.92576 1.85386C3.10312 3.06255 1.68254 4.78051 0.843672 6.7905C0.00480166 8.80048 -0.214684 11.0122 0.212968 13.146C0.64062 15.2798 1.6962 17.2398 3.24623 18.7782C4.79626 20.3166 6.77112 21.3642 8.92107 21.7886C11.071 22.2131 13.2995 21.9952 15.3247 21.1627C17.3499 20.3301 19.0809 18.9202 20.2988 17.1113C21.5166 15.3023 22.1666 13.1756 22.1666 11C22.1699 9.55457 21.8854 8.12273 21.3296 6.78669C20.7737 5.45066 19.9575 4.23674 18.9277 3.21466C17.8978 2.19257 16.6747 1.38244 15.3286 0.83078C13.9824 0.279121 12.5397 -0.00319557 11.0833 2.72849e-05ZM11.0833 19.8652C9.44931 19.8645 7.84764 19.4131 6.45706 18.5615L11.0833 9.9652L13.2302 13.9578H10.9807C10.7011 13.9563 10.4266 14.0316 10.1875 14.1754C9.94843 14.3193 9.75411 14.5259 9.62607 14.7726L9.03907 15.9378H14.3057L15.7137 18.5533C14.3209 19.4044 12.7189 19.8583 11.0833 19.8652ZM17.3885 17.2782L12.8731 9.09335C12.704 8.76086 12.4452 8.48145 12.1256 8.28625C11.806 8.09104 11.4381 7.98768 11.0628 7.98768C10.6875 7.98768 10.3196 8.09104 10 8.28625C9.68039 8.48145 9.42163 8.76086 9.25252 9.09335L4.73709 17.2782C3.47841 16.0381 2.61917 14.455 2.26836 12.7296C1.91755 11.0042 2.09098 9.21423 2.76666 7.58679C3.44233 5.95935 4.5898 4.56774 6.06352 3.58849C7.53724 2.60923 9.2708 2.08645 11.0443 2.08645C12.8178 2.08645 14.5514 2.60923 16.0251 3.58849C17.4988 4.56774 18.6463 5.95935 19.322 7.58679C19.9977 9.21423 20.1711 11.0042 19.8203 12.7296C19.4695 14.455 18.6102 16.0381 17.3516 17.2782H17.3885Z"
+                                fill="url(#paint2_angular_160:7289)" style="mix-blend-mode:screen" />
+                        </g>
+                        <g opacity="0.5">
+                            <path
+                                d="M41.168 15.7024L36.609 7.15098C36.4786 6.89332 36.2836 6.677 36.0446 6.52485C35.8056 6.3727 35.5315 6.29036 35.2513 6.28652C34.971 6.28268 34.6949 6.35748 34.4521 6.50303C34.2094 6.64858 34.0089 6.85948 33.872 7.11347L29.293 15.7024H31.0507L35.2285 7.86777L36.902 11.0058H35.1522C34.9567 11.0047 34.763 11.0438 34.5821 11.1209C34.4013 11.1979 34.2369 11.3114 34.0985 11.4547C33.9601 11.5981 33.8503 11.7684 33.7757 11.956C33.701 12.1436 33.6628 12.3447 33.6633 12.5477V12.5769H37.7367L39.4102 15.7149L41.168 15.7024Z"
+                                fill="url(#paint3_radial_160:7289)" />
+                            <path
+                                d="M41.168 15.7024L36.609 7.15098C36.4786 6.89332 36.2836 6.677 36.0446 6.52485C35.8056 6.3727 35.5315 6.29036 35.2513 6.28652C34.971 6.28268 34.6949 6.35748 34.4521 6.50303C34.2094 6.64858 34.0089 6.85948 33.872 7.11347L29.293 15.7024H31.0507L35.2285 7.86777L36.902 11.0058H35.1522C34.9567 11.0047 34.763 11.0438 34.5821 11.1209C34.4013 11.1979 34.2369 11.3114 34.0985 11.4547C33.9601 11.5981 33.8503 11.7684 33.7757 11.956C33.701 12.1436 33.6628 12.3447 33.6633 12.5477V12.5769H37.7367L39.4102 15.7149L41.168 15.7024Z"
+                                fill="url(#paint4_angular_160:7289)" style="mix-blend-mode:difference" />
+                            <path
+                                d="M41.168 15.7024L36.609 7.15098C36.4786 6.89332 36.2836 6.677 36.0446 6.52485C35.8056 6.3727 35.5315 6.29036 35.2513 6.28652C34.971 6.28268 34.6949 6.35748 34.4521 6.50303C34.2094 6.64858 34.0089 6.85948 33.872 7.11347L29.293 15.7024H31.0507L35.2285 7.86777L36.902 11.0058H35.1522C34.9567 11.0047 34.763 11.0438 34.5821 11.1209C34.4013 11.1979 34.2369 11.3114 34.0985 11.4547C33.9601 11.5981 33.8503 11.7684 33.7757 11.956C33.701 12.1436 33.6628 12.3447 33.6633 12.5477V12.5769H37.7367L39.4102 15.7149L41.168 15.7024Z"
+                                fill="url(#paint5_angular_160:7289)" style="mix-blend-mode:screen" />
+                            <path
+                                d="M58.5859 6.29474H57.6993C57.4367 6.29356 57.1786 6.36533 56.9515 6.50265C56.7245 6.63996 56.5367 6.83785 56.4075 7.07593L52.6524 14.1233L48.8934 7.07593C48.7656 6.83692 48.5789 6.63774 48.3525 6.49895C48.1261 6.36016 47.8683 6.28677 47.6056 6.28638H46.7109V15.7066H48.1953V9.07694L51.2684 14.8419C51.3997 15.099 51.5949 15.3147 51.8337 15.4663C52.0725 15.618 52.346 15.7 52.6257 15.7039C52.9054 15.7077 53.1809 15.6332 53.4234 15.4882C53.666 15.3432 53.8667 15.1329 54.0044 14.8795L57.0895 9.07694V15.7149H58.5739V6.29474H58.5859Z"
+                                fill="url(#paint6_radial_160:7289)" />
+                            <path
+                                d="M58.5859 6.29474H57.6993C57.4367 6.29356 57.1786 6.36533 56.9515 6.50265C56.7245 6.63996 56.5367 6.83785 56.4075 7.07593L52.6524 14.1233L48.8934 7.07593C48.7656 6.83692 48.5789 6.63774 48.3525 6.49895C48.1261 6.36016 47.8683 6.28677 47.6056 6.28638H46.7109V15.7066H48.1953V9.07694L51.2684 14.8419C51.3997 15.099 51.5949 15.3147 51.8337 15.4663C52.0725 15.618 52.346 15.7 52.6257 15.7039C52.9054 15.7077 53.1809 15.6332 53.4234 15.4882C53.666 15.3432 53.8667 15.1329 54.0044 14.8795L57.0895 9.07694V15.7149H58.5739V6.29474H58.5859Z"
+                                fill="url(#paint7_angular_160:7289)" style="mix-blend-mode:difference" />
+                            <path
+                                d="M58.5859 6.29474H57.6993C57.4367 6.29356 57.1786 6.36533 56.9515 6.50265C56.7245 6.63996 56.5367 6.83785 56.4075 7.07593L52.6524 14.1233L48.8934 7.07593C48.7656 6.83692 48.5789 6.63774 48.3525 6.49895C48.1261 6.36016 47.8683 6.28677 47.6056 6.28638H46.7109V15.7066H48.1953V9.07694L51.2684 14.8419C51.3997 15.099 51.5949 15.3147 51.8337 15.4663C52.0725 15.618 52.346 15.7 52.6257 15.7039C52.9054 15.7077 53.1809 15.6332 53.4234 15.4882C53.666 15.3432 53.8667 15.1329 54.0044 14.8795L57.0895 9.07694V15.7149H58.5739V6.29474H58.5859Z"
+                                fill="url(#paint8_angular_160:7289)" style="mix-blend-mode:screen" />
+                            <path
+                                d="M66.4975 15.7149H64.9176V6.28744H73.1249C73.8331 6.26781 74.5224 6.52087 75.055 6.99598C75.5877 7.47109 75.9242 8.13321 75.9974 8.84986C76.0165 9.22909 75.959 9.60828 75.8284 9.96402C75.6978 10.3198 75.4969 10.6445 75.2381 10.9183C74.9793 11.192 74.6681 11.4089 74.3237 11.5556C73.9793 11.7023 73.609 11.7757 73.2357 11.7712H67.2854C67.2854 11.5644 67.3256 11.3597 67.4036 11.1687C67.4817 10.9778 67.5961 10.8045 67.7402 10.6586C67.8844 10.5128 68.0554 10.3974 68.2436 10.3191C68.4317 10.2407 68.6333 10.2009 68.8366 10.202H73.1864C73.4599 10.2081 73.7272 10.1193 73.9443 9.95009C74.1614 9.7809 74.3153 9.54148 74.3806 9.27135C74.4155 9.09724 74.4117 8.91738 74.3693 8.74498C74.3269 8.57258 74.2471 8.41202 74.1357 8.27511C74.0243 8.1382 73.8842 8.02842 73.7256 7.95383C73.567 7.87925 73.394 7.84174 73.2192 7.84409H66.4975V15.7149Z"
+                                fill="url(#paint9_radial_160:7289)" />
+                            <path
+                                d="M66.4975 15.7149H64.9176V6.28744H73.1249C73.8331 6.26781 74.5224 6.52087 75.055 6.99598C75.5877 7.47109 75.9242 8.13321 75.9974 8.84986C76.0165 9.22909 75.959 9.60828 75.8284 9.96402C75.6978 10.3198 75.4969 10.6445 75.2381 10.9183C74.9793 11.192 74.6681 11.4089 74.3237 11.5556C73.9793 11.7023 73.609 11.7757 73.2357 11.7712H67.2854C67.2854 11.5644 67.3256 11.3597 67.4036 11.1687C67.4817 10.9778 67.5961 10.8045 67.7402 10.6586C67.8844 10.5128 68.0554 10.3974 68.2436 10.3191C68.4317 10.2407 68.6333 10.2009 68.8366 10.202H73.1864C73.4599 10.2081 73.7272 10.1193 73.9443 9.95009C74.1614 9.7809 74.3153 9.54148 74.3806 9.27135C74.4155 9.09724 74.4117 8.91738 74.3693 8.74498C74.3269 8.57258 74.2471 8.41202 74.1357 8.27511C74.0243 8.1382 73.8842 8.02842 73.7256 7.95383C73.567 7.87925 73.394 7.84174 73.2192 7.84409H66.4975V15.7149Z"
+                                fill="url(#paint10_angular_160:7289)" style="mix-blend-mode:difference" />
+                            <path
+                                d="M66.4975 15.7149H64.9176V6.28744H73.1249C73.8331 6.26781 74.5224 6.52087 75.055 6.99598C75.5877 7.47109 75.9242 8.13321 75.9974 8.84986C76.0165 9.22909 75.959 9.60828 75.8284 9.96402C75.6978 10.3198 75.4969 10.6445 75.2381 10.9183C74.9793 11.192 74.6681 11.4089 74.3237 11.5556C73.9793 11.7023 73.609 11.7757 73.2357 11.7712H67.2854C67.2854 11.5644 67.3256 11.3597 67.4036 11.1687C67.4817 10.9778 67.5961 10.8045 67.7402 10.6586C67.8844 10.5128 68.0554 10.3974 68.2436 10.3191C68.4317 10.2407 68.6333 10.2009 68.8366 10.202H73.1864C73.4599 10.2081 73.7272 10.1193 73.9443 9.95009C74.1614 9.7809 74.3153 9.54148 74.3806 9.27135C74.4155 9.09724 74.4117 8.91738 74.3693 8.74498C74.3269 8.57258 74.2471 8.41202 74.1357 8.27511C74.0243 8.1382 73.8842 8.02842 73.7256 7.95383C73.567 7.87925 73.394 7.84174 73.2192 7.84409H66.4975V15.7149Z"
+                                fill="url(#paint11_angular_160:7289)" style="mix-blend-mode:screen" />
+                            <path
+                                d="M89.0655 11.7736C89.4387 11.7781 89.8089 11.7047 90.1531 11.5579C90.4974 11.4112 90.8085 11.1942 91.0671 10.9203C91.3258 10.6465 91.5266 10.3216 91.6572 9.96565C91.7877 9.60974 91.8452 9.23039 91.8261 8.85099C91.753 8.13403 91.4165 7.47161 90.8842 6.99629C90.3518 6.52097 89.6627 6.2678 88.9548 6.28744H80.751V15.7066H82.3507V7.8573H89.0368C89.3101 7.85116 89.5774 7.94006 89.7944 8.10933C90.0114 8.2786 90.1652 8.51812 90.2305 8.78837C90.2654 8.96256 90.2616 9.1425 90.2192 9.31498C90.1769 9.48745 90.0971 9.64808 89.9857 9.78505C89.8744 9.92202 89.7343 10.0318 89.5758 10.1065C89.4172 10.1811 89.2443 10.2186 89.0696 10.2163H83.1424C83.1435 10.633 83.3069 11.0323 83.5968 11.3266C83.8867 11.6209 84.2794 11.7861 84.6888 11.7861H86.6454L89.808 15.7149H91.8343L88.6717 11.7861L89.0655 11.7736Z"
+                                fill="url(#paint12_radial_160:7289)" />
+                            <path
+                                d="M89.0655 11.7736C89.4387 11.7781 89.8089 11.7047 90.1531 11.5579C90.4974 11.4112 90.8085 11.1942 91.0671 10.9203C91.3258 10.6465 91.5266 10.3216 91.6572 9.96565C91.7877 9.60974 91.8452 9.23039 91.8261 8.85099C91.753 8.13403 91.4165 7.47161 90.8842 6.99629C90.3518 6.52097 89.6627 6.2678 88.9548 6.28744H80.751V15.7066H82.3507V7.8573H89.0368C89.3101 7.85116 89.5774 7.94006 89.7944 8.10933C90.0114 8.2786 90.1652 8.51812 90.2305 8.78837C90.2654 8.96256 90.2616 9.1425 90.2192 9.31498C90.1769 9.48745 90.0971 9.64808 89.9857 9.78505C89.8744 9.92202 89.7343 10.0318 89.5758 10.1065C89.4172 10.1811 89.2443 10.2186 89.0696 10.2163H83.1424C83.1435 10.633 83.3069 11.0323 83.5968 11.3266C83.8867 11.6209 84.2794 11.7861 84.6888 11.7861H86.6454L89.808 15.7149H91.8343L88.6717 11.7861L89.0655 11.7736Z"
+                                fill="url(#paint13_angular_160:7289)" style="mix-blend-mode:difference" />
+                            <path
+                                d="M89.0655 11.7736C89.4387 11.7781 89.8089 11.7047 90.1531 11.5579C90.4974 11.4112 90.8085 11.1942 91.0671 10.9203C91.3258 10.6465 91.5266 10.3216 91.6572 9.96565C91.7877 9.60974 91.8452 9.23039 91.8261 8.85099C91.753 8.13403 91.4165 7.47161 90.8842 6.99629C90.3518 6.52097 89.6627 6.2678 88.9548 6.28744H80.751V15.7066H82.3507V7.8573H89.0368C89.3101 7.85116 89.5774 7.94006 89.7944 8.10933C90.0114 8.2786 90.1652 8.51812 90.2305 8.78837C90.2654 8.96256 90.2616 9.1425 90.2192 9.31498C90.1769 9.48745 90.0971 9.64808 89.9857 9.78505C89.8744 9.92202 89.7343 10.0318 89.5758 10.1065C89.4172 10.1811 89.2443 10.2186 89.0696 10.2163H83.1424C83.1435 10.633 83.3069 11.0323 83.5968 11.3266C83.8867 11.6209 84.2794 11.7861 84.6888 11.7861H86.6454L89.808 15.7149H91.8343L88.6717 11.7861L89.0655 11.7736Z"
+                                fill="url(#paint14_angular_160:7289)" style="mix-blend-mode:screen" />
+                            <path
+                                d="M97.8807 15.7145H97.376V7.35259C97.3776 7.21094 97.4063 7.071 97.4606 6.94075C97.5148 6.8105 97.5935 6.69251 97.6922 6.5935C97.7908 6.4945 97.9075 6.41643 98.0355 6.36375C98.1635 6.31106 98.3004 6.28479 98.4383 6.28645H98.9593V14.6484C98.9577 14.7915 98.9285 14.9328 98.8732 15.0642C98.8179 15.1956 98.7378 15.3143 98.6374 15.4135C98.537 15.5128 98.4184 15.5905 98.2885 15.6422C98.1586 15.6938 98.02 15.7184 97.8807 15.7145Z"
+                                fill="url(#paint15_radial_160:7289)" />
+                            <path
+                                d="M97.8807 15.7145H97.376V7.35259C97.3776 7.21094 97.4063 7.071 97.4606 6.94075C97.5148 6.8105 97.5935 6.69251 97.6922 6.5935C97.7908 6.4945 97.9075 6.41643 98.0355 6.36375C98.1635 6.31106 98.3004 6.28479 98.4383 6.28645H98.9593V14.6484C98.9577 14.7915 98.9285 14.9328 98.8732 15.0642C98.8179 15.1956 98.7378 15.3143 98.6374 15.4135C98.537 15.5128 98.4184 15.5905 98.2885 15.6422C98.1586 15.6938 98.02 15.7184 97.8807 15.7145Z"
+                                fill="url(#paint16_angular_160:7289)" style="mix-blend-mode:difference" />
+                            <path
+                                d="M97.8807 15.7145H97.376V7.35259C97.3776 7.21094 97.4063 7.071 97.4606 6.94075C97.5148 6.8105 97.5935 6.69251 97.6922 6.5935C97.7908 6.4945 97.9075 6.41643 98.0355 6.36375C98.1635 6.31106 98.3004 6.28479 98.4383 6.28645H98.9593V14.6484C98.9577 14.7915 98.9285 14.9328 98.8732 15.0642C98.8179 15.1956 98.7378 15.3143 98.6374 15.4135C98.537 15.5128 98.4184 15.5905 98.2885 15.6422C98.1586 15.6938 98.02 15.7184 97.8807 15.7145Z"
+                                fill="url(#paint17_angular_160:7289)" style="mix-blend-mode:screen" />
+                            <path
+                                d="M113.601 15.7147H105.297V15.2095C105.298 15.068 105.327 14.9282 105.382 14.7982C105.437 14.6681 105.516 14.5503 105.616 14.4514C105.715 14.3525 105.833 14.2745 105.962 14.2219C106.091 14.1693 106.229 14.1431 106.368 14.1447H113.601C113.912 14.1481 114.211 14.026 114.433 13.8053C114.656 13.5846 114.783 13.2833 114.787 12.9673C114.783 12.6513 114.656 12.3499 114.433 12.1292C114.211 11.9085 113.912 11.7864 113.601 11.7898H108.063C107.704 11.7942 107.347 11.7265 107.013 11.5906C106.679 11.4547 106.375 11.2533 106.118 10.9978C105.86 10.7422 105.655 10.4377 105.514 10.1014C105.372 9.76522 105.297 9.40393 105.293 9.03819C105.297 8.67245 105.372 8.31115 105.514 7.97492C105.655 7.6387 105.86 7.33412 106.118 7.07861C106.375 6.82309 106.679 6.62164 107.013 6.48574C107.347 6.34985 107.704 6.28217 108.063 6.28658H116.372V6.7918C116.37 6.93327 116.341 7.07304 116.287 7.20311C116.232 7.33319 116.152 7.45103 116.053 7.5499C115.953 7.64877 115.836 7.72674 115.707 7.77935C115.578 7.83197 115.44 7.8582 115.3 7.85654H108.063C107.754 7.85431 107.455 7.97684 107.234 8.19743C107.012 8.41802 106.886 8.71874 106.881 9.03401C106.886 9.35 107.013 9.65137 107.235 9.87207C107.458 10.0928 107.757 10.2148 108.068 10.2115H113.605C113.965 10.2071 114.322 10.2747 114.655 10.4106C114.989 10.5465 115.294 10.748 115.551 11.0035C115.808 11.259 116.013 11.5636 116.155 11.8998C116.297 12.236 116.372 12.5973 116.376 12.9631C116.372 13.3292 116.296 13.6908 116.155 14.0273C116.013 14.3638 115.807 14.6686 115.549 14.9242C115.292 15.1797 114.987 15.3811 114.653 15.5168C114.318 15.6524 113.961 15.7197 113.601 15.7147Z"
+                                fill="url(#paint18_radial_160:7289)" />
+                            <path
+                                d="M113.601 15.7147H105.297V15.2095C105.298 15.068 105.327 14.9282 105.382 14.7982C105.437 14.6681 105.516 14.5503 105.616 14.4514C105.715 14.3525 105.833 14.2745 105.962 14.2219C106.091 14.1693 106.229 14.1431 106.368 14.1447H113.601C113.912 14.1481 114.211 14.026 114.433 13.8053C114.656 13.5846 114.783 13.2833 114.787 12.9673C114.783 12.6513 114.656 12.3499 114.433 12.1292C114.211 11.9085 113.912 11.7864 113.601 11.7898H108.063C107.704 11.7942 107.347 11.7265 107.013 11.5906C106.679 11.4547 106.375 11.2533 106.118 10.9978C105.86 10.7422 105.655 10.4377 105.514 10.1014C105.372 9.76522 105.297 9.40393 105.293 9.03819C105.297 8.67245 105.372 8.31115 105.514 7.97492C105.655 7.6387 105.86 7.33412 106.118 7.07861C106.375 6.82309 106.679 6.62164 107.013 6.48574C107.347 6.34985 107.704 6.28217 108.063 6.28658H116.372V6.7918C116.37 6.93327 116.341 7.07304 116.287 7.20311C116.232 7.33319 116.152 7.45103 116.053 7.5499C115.953 7.64877 115.836 7.72674 115.707 7.77935C115.578 7.83197 115.44 7.8582 115.3 7.85654H108.063C107.754 7.85431 107.455 7.97684 107.234 8.19743C107.012 8.41802 106.886 8.71874 106.881 9.03401C106.886 9.35 107.013 9.65137 107.235 9.87207C107.458 10.0928 107.757 10.2148 108.068 10.2115H113.605C113.965 10.2071 114.322 10.2747 114.655 10.4106C114.989 10.5465 115.294 10.748 115.551 11.0035C115.808 11.259 116.013 11.5636 116.155 11.8998C116.297 12.236 116.372 12.5973 116.376 12.9631C116.372 13.3292 116.296 13.6908 116.155 14.0273C116.013 14.3638 115.807 14.6686 115.549 14.9242C115.292 15.1797 114.987 15.3811 114.653 15.5168C114.318 15.6524 113.961 15.7197 113.601 15.7147Z"
+                                fill="url(#paint19_angular_160:7289)" style="mix-blend-mode:difference" />
+                            <path
+                                d="M113.601 15.7147H105.297V15.2095C105.298 15.068 105.327 14.9282 105.382 14.7982C105.437 14.6681 105.516 14.5503 105.616 14.4514C105.715 14.3525 105.833 14.2745 105.962 14.2219C106.091 14.1693 106.229 14.1431 106.368 14.1447H113.601C113.912 14.1481 114.211 14.026 114.433 13.8053C114.656 13.5846 114.783 13.2833 114.787 12.9673C114.783 12.6513 114.656 12.3499 114.433 12.1292C114.211 11.9085 113.912 11.7864 113.601 11.7898H108.063C107.704 11.7942 107.347 11.7265 107.013 11.5906C106.679 11.4547 106.375 11.2533 106.118 10.9978C105.86 10.7422 105.655 10.4377 105.514 10.1014C105.372 9.76522 105.297 9.40393 105.293 9.03819C105.297 8.67245 105.372 8.31115 105.514 7.97492C105.655 7.6387 105.86 7.33412 106.118 7.07861C106.375 6.82309 106.679 6.62164 107.013 6.48574C107.347 6.34985 107.704 6.28217 108.063 6.28658H116.372V6.7918C116.37 6.93327 116.341 7.07304 116.287 7.20311C116.232 7.33319 116.152 7.45103 116.053 7.5499C115.953 7.64877 115.836 7.72674 115.707 7.77935C115.578 7.83197 115.44 7.8582 115.3 7.85654H108.063C107.754 7.85431 107.455 7.97684 107.234 8.19743C107.012 8.41802 106.886 8.71874 106.881 9.03401C106.886 9.35 107.013 9.65137 107.235 9.87207C107.458 10.0928 107.757 10.2148 108.068 10.2115H113.605C113.965 10.2071 114.322 10.2747 114.655 10.4106C114.989 10.5465 115.294 10.748 115.551 11.0035C115.808 11.259 116.013 11.5636 116.155 11.8998C116.297 12.236 116.372 12.5973 116.376 12.9631C116.372 13.3292 116.296 13.6908 116.155 14.0273C116.013 14.3638 115.807 14.6686 115.549 14.9242C115.292 15.1797 114.987 15.3811 114.653 15.5168C114.318 15.6524 113.961 15.7197 113.601 15.7147Z"
+                                fill="url(#paint20_angular_160:7289)" style="mix-blend-mode:screen" />
+                            <path
+                                d="M131.925 7.85767H121.918V7.35205C121.919 7.21046 121.948 7.07058 122.003 6.9404C122.058 6.81023 122.137 6.69229 122.237 6.59334C122.336 6.49439 122.454 6.41636 122.583 6.36371C122.712 6.31105 122.851 6.28479 122.99 6.28645H133.001V6.79209C132.999 6.93403 132.97 7.07425 132.915 7.2047C132.86 7.33516 132.78 7.45327 132.68 7.55228C132.58 7.65128 132.462 7.72924 132.332 7.78164C132.203 7.83405 132.064 7.85989 131.925 7.85767Z"
+                                fill="url(#paint21_radial_160:7289)" />
+                            <path
+                                d="M131.925 7.85767H121.918V7.35205C121.919 7.21046 121.948 7.07058 122.003 6.9404C122.058 6.81023 122.137 6.69229 122.237 6.59334C122.336 6.49439 122.454 6.41636 122.583 6.36371C122.712 6.31105 122.851 6.28479 122.99 6.28645H133.001V6.79209C132.999 6.93403 132.97 7.07425 132.915 7.2047C132.86 7.33516 132.78 7.45327 132.68 7.55228C132.58 7.65128 132.462 7.72924 132.332 7.78164C132.203 7.83405 132.064 7.85989 131.925 7.85767Z"
+                                fill="url(#paint22_angular_160:7289)" style="mix-blend-mode:difference" />
+                            <path
+                                d="M131.925 7.85767H121.918V7.35205C121.919 7.21046 121.948 7.07058 122.003 6.9404C122.058 6.81023 122.137 6.69229 122.237 6.59334C122.336 6.49439 122.454 6.41636 122.583 6.36371C122.712 6.31105 122.851 6.28479 122.99 6.28645H133.001V6.79209C132.999 6.93403 132.97 7.07425 132.915 7.2047C132.86 7.33516 132.78 7.45327 132.68 7.55228C132.58 7.65128 132.462 7.72924 132.332 7.78164C132.203 7.83405 132.064 7.85989 131.925 7.85767Z"
+                                fill="url(#paint23_angular_160:7289)" style="mix-blend-mode:screen" />
+                            <path
+                                d="M132.997 15.7146H124.689C124.329 15.7191 123.972 15.6514 123.638 15.5156C123.305 15.3798 123 15.1785 122.743 14.9231C122.486 14.6677 122.28 14.3634 122.139 14.0273C121.997 13.6913 121.922 13.3303 121.918 12.9647V10.2148H133.001V10.7198C133 10.8611 132.971 11.0008 132.916 11.1308C132.861 11.2608 132.782 11.3786 132.682 11.4774C132.583 11.5762 132.465 11.6541 132.336 11.7067C132.207 11.7593 132.069 11.7855 131.93 11.7838H123.502V12.9606C123.507 13.2764 123.634 13.5775 123.856 13.7981C124.079 14.0187 124.378 14.1407 124.689 14.1373H131.922C132.061 14.1357 132.199 14.1619 132.328 14.2145C132.457 14.267 132.575 14.345 132.674 14.4438C132.774 14.5426 132.853 14.6603 132.908 14.7903C132.962 14.9203 132.991 15.06 132.993 15.2014L132.997 15.7146Z"
+                                fill="url(#paint24_radial_160:7289)" />
+                            <path
+                                d="M132.997 15.7146H124.689C124.329 15.7191 123.972 15.6514 123.638 15.5156C123.305 15.3798 123 15.1785 122.743 14.9231C122.486 14.6677 122.28 14.3634 122.139 14.0273C121.997 13.6913 121.922 13.3303 121.918 12.9647V10.2148H133.001V10.7198C133 10.8611 132.971 11.0008 132.916 11.1308C132.861 11.2608 132.782 11.3786 132.682 11.4774C132.583 11.5762 132.465 11.6541 132.336 11.7067C132.207 11.7593 132.069 11.7855 131.93 11.7838H123.502V12.9606C123.507 13.2764 123.634 13.5775 123.856 13.7981C124.079 14.0187 124.378 14.1407 124.689 14.1373H131.922C132.061 14.1357 132.199 14.1619 132.328 14.2145C132.457 14.267 132.575 14.345 132.674 14.4438C132.774 14.5426 132.853 14.6603 132.908 14.7903C132.962 14.9203 132.991 15.06 132.993 15.2014L132.997 15.7146Z"
+                                fill="url(#paint25_angular_160:7289)" style="mix-blend-mode:difference" />
+                            <path
+                                d="M132.997 15.7146H124.689C124.329 15.7191 123.972 15.6514 123.638 15.5156C123.305 15.3798 123 15.1785 122.743 14.9231C122.486 14.6677 122.28 14.3634 122.139 14.0273C121.997 13.6913 121.922 13.3303 121.918 12.9647V10.2148H133.001V10.7198C133 10.8611 132.971 11.0008 132.916 11.1308C132.861 11.2608 132.782 11.3786 132.682 11.4774C132.583 11.5762 132.465 11.6541 132.336 11.7067C132.207 11.7593 132.069 11.7855 131.93 11.7838H123.502V12.9606C123.507 13.2764 123.634 13.5775 123.856 13.7981C124.079 14.0187 124.378 14.1407 124.689 14.1373H131.922C132.061 14.1357 132.199 14.1619 132.328 14.2145C132.457 14.267 132.575 14.345 132.674 14.4438C132.774 14.5426 132.853 14.6603 132.908 14.7903C132.962 14.9203 132.991 15.06 132.993 15.2014L132.997 15.7146Z"
+                                fill="url(#paint26_angular_160:7289)" style="mix-blend-mode:screen" />
+                        </g>
+                        <defs>
+                            <radialGradient id="paint0_radial_160:7289" cx="0" cy="0" r="1"
+                                gradientUnits="userSpaceOnUse"
+                                gradientTransform="translate(5.60817 1.364) rotate(61.7676) scale(22.3986 22.4927)">
+                                <stop stop-color="#6755D7" />
+                                <stop offset="0.203455" stop-color="#D3B0FF" />
+                                <stop offset="0.401848" stop-color="#EFB0FE" />
+                                <stop offset="0.615048" stop-color="#ABB3FC" />
+                                <stop offset="0.823232" stop-color="#ADBAFF" />
+                                <stop offset="1" stop-color="#58C4F6" />
+                            </radialGradient>
+                            <radialGradient id="paint1_angular_160:7289" cx="0" cy="0" r="1"
+                                gradientUnits="userSpaceOnUse"
+                                gradientTransform="translate(11.0833 11) rotate(90) scale(11 11.0833)">
+                                <stop stop-color="white" />
+                                <stop offset="0.145833" />
+                                <stop offset="0.255208" stop-color="white" />
+                                <stop offset="0.421875" />
+                                <stop offset="0.583333" stop-color="white" />
+                                <stop offset="0.770833" />
+                                <stop offset="0.864583" stop-color="white" />
+                                <stop offset="1" />
+                            </radialGradient>
+                            <radialGradient id="paint2_angular_160:7289" cx="0" cy="0" r="1"
+                                gradientUnits="userSpaceOnUse"
+                                gradientTransform="translate(11.0833 11) rotate(90) scale(11 11.0833)">
+                                <stop stop-color="white" />
+                                <stop offset="0.145833" />
+                                <stop offset="0.255208" stop-color="white" />
+                                <stop offset="0.421875" />
+                                <stop offset="0.583333" stop-color="white" />
+                                <stop offset="0.770833" />
+                                <stop offset="0.864583" stop-color="white" />
+                                <stop offset="1" />
+                            </radialGradient>
+                            <radialGradient id="paint3_radial_160:7289" cx="0" cy="0" r="1"
+                                gradientUnits="userSpaceOnUse"
+                                gradientTransform="translate(32.2973 6.87095) rotate(56.1322) scale(10.1857 11.3561)">
+                                <stop stop-color="#6755D7" />
+                                <stop offset="0.203455" stop-color="#D3B0FF" />
+                                <stop offset="0.401848" stop-color="#EFB0FE" />
+                                <stop offset="0.615048" stop-color="#ABB3FC" />
+                                <stop offset="0.823232" stop-color="#ADBAFF" />
+                                <stop offset="1" stop-color="#58C4F6" />
+                            </radialGradient>
+                            <radialGradient id="paint4_angular_160:7289" cx="0" cy="0" r="1"
+                                gradientUnits="userSpaceOnUse"
+                                gradientTransform="translate(35.2305 11.0007) rotate(90) scale(4.71429 5.9375)">
+                                <stop stop-color="white" />
+                                <stop offset="0.145833" />
+                                <stop offset="0.255208" stop-color="white" />
+                                <stop offset="0.421875" />
+                                <stop offset="0.583333" stop-color="white" />
+                                <stop offset="0.770833" />
+                                <stop offset="0.864583" stop-color="white" />
+                                <stop offset="1" />
+                            </radialGradient>
+                            <radialGradient id="paint5_angular_160:7289" cx="0" cy="0" r="1"
+                                gradientUnits="userSpaceOnUse"
+                                gradientTransform="translate(35.2305 11.0007) rotate(90) scale(4.71429 5.9375)">
+                                <stop stop-color="white" />
+                                <stop offset="0.145833" />
+                                <stop offset="0.255208" stop-color="white" />
+                                <stop offset="0.421875" />
+                                <stop offset="0.583333" stop-color="white" />
+                                <stop offset="0.770833" />
+                                <stop offset="0.864583" stop-color="white" />
+                                <stop offset="1" />
+                            </radialGradient>
+                            <radialGradient id="paint6_radial_160:7289" cx="0" cy="0" r="1"
+                                gradientUnits="userSpaceOnUse"
+                                gradientTransform="translate(49.7153 6.87095) rotate(56.1322) scale(10.1857 11.3561)">
+                                <stop stop-color="#6755D7" />
+                                <stop offset="0.203455" stop-color="#D3B0FF" />
+                                <stop offset="0.401848" stop-color="#EFB0FE" />
+                                <stop offset="0.615048" stop-color="#ABB3FC" />
+                                <stop offset="0.823232" stop-color="#ADBAFF" />
+                                <stop offset="1" stop-color="#58C4F6" />
+                            </radialGradient>
+                            <radialGradient id="paint7_angular_160:7289" cx="0" cy="0" r="1"
+                                gradientUnits="userSpaceOnUse"
+                                gradientTransform="translate(52.6484 11.0007) rotate(90) scale(4.71429 5.9375)">
+                                <stop stop-color="white" />
+                                <stop offset="0.145833" />
+                                <stop offset="0.255208" stop-color="white" />
+                                <stop offset="0.421875" />
+                                <stop offset="0.583333" stop-color="white" />
+                                <stop offset="0.770833" />
+                                <stop offset="0.864583" stop-color="white" />
+                                <stop offset="1" />
+                            </radialGradient>
+                            <radialGradient id="paint8_angular_160:7289" cx="0" cy="0" r="1"
+                                gradientUnits="userSpaceOnUse"
+                                gradientTransform="translate(52.6484 11.0007) rotate(90) scale(4.71429 5.9375)">
+                                <stop stop-color="white" />
+                                <stop offset="0.145833" />
+                                <stop offset="0.255208" stop-color="white" />
+                                <stop offset="0.421875" />
+                                <stop offset="0.583333" stop-color="white" />
+                                <stop offset="0.770833" />
+                                <stop offset="0.864583" stop-color="white" />
+                                <stop offset="1" />
+                            </radialGradient>
+                            <radialGradient id="paint9_radial_160:7289" cx="0" cy="0" r="1"
+                                gradientUnits="userSpaceOnUse"
+                                gradientTransform="translate(67.7217 6.87095) rotate(57.9365) scale(9.97974 10.8177)">
+                                <stop stop-color="#6755D7" />
+                                <stop offset="0.203455" stop-color="#D3B0FF" />
+                                <stop offset="0.401848" stop-color="#EFB0FE" />
+                                <stop offset="0.615048" stop-color="#ABB3FC" />
+                                <stop offset="0.823232" stop-color="#ADBAFF" />
+                                <stop offset="1" stop-color="#58C4F6" />
+                            </radialGradient>
+                            <radialGradient id="paint10_angular_160:7289" cx="0" cy="0" r="1"
+                                gradientUnits="userSpaceOnUse"
+                                gradientTransform="translate(70.4593 11.0007) rotate(90) scale(4.71429 5.54167)">
+                                <stop stop-color="white" />
+                                <stop offset="0.145833" />
+                                <stop offset="0.255208" stop-color="white" />
+                                <stop offset="0.421875" />
+                                <stop offset="0.583333" stop-color="white" />
+                                <stop offset="0.770833" />
+                                <stop offset="0.864583" stop-color="white" />
+                                <stop offset="1" />
+                            </radialGradient>
+                            <radialGradient id="paint11_angular_160:7289" cx="0" cy="0" r="1"
+                                gradientUnits="userSpaceOnUse"
+                                gradientTransform="translate(70.4593 11.0007) rotate(90) scale(4.71429 5.54167)">
+                                <stop stop-color="white" />
+                                <stop offset="0.145833" />
+                                <stop offset="0.255208" stop-color="white" />
+                                <stop offset="0.421875" />
+                                <stop offset="0.583333" stop-color="white" />
+                                <stop offset="0.770833" />
+                                <stop offset="0.864583" stop-color="white" />
+                                <stop offset="1" />
+                            </radialGradient>
+                            <radialGradient id="paint12_radial_160:7289" cx="0" cy="0" r="1"
+                                gradientUnits="userSpaceOnUse"
+                                gradientTransform="translate(83.5551 6.87095) rotate(57.9365) scale(9.97974 10.8177)">
+                                <stop stop-color="#6755D7" />
+                                <stop offset="0.203455" stop-color="#D3B0FF" />
+                                <stop offset="0.401848" stop-color="#EFB0FE" />
+                                <stop offset="0.615048" stop-color="#ABB3FC" />
+                                <stop offset="0.823232" stop-color="#ADBAFF" />
+                                <stop offset="1" stop-color="#58C4F6" />
+                            </radialGradient>
+                            <radialGradient id="paint13_angular_160:7289" cx="0" cy="0" r="1"
+                                gradientUnits="userSpaceOnUse"
+                                gradientTransform="translate(86.2926 11.0007) rotate(90) scale(4.71429 5.54167)">
+                                <stop stop-color="white" />
+                                <stop offset="0.145833" />
+                                <stop offset="0.255208" stop-color="white" />
+                                <stop offset="0.421875" />
+                                <stop offset="0.583333" stop-color="white" />
+                                <stop offset="0.770833" />
+                                <stop offset="0.864583" stop-color="white" />
+                                <stop offset="1" />
+                            </radialGradient>
+                            <radialGradient id="paint14_angular_160:7289" cx="0" cy="0" r="1"
+                                gradientUnits="userSpaceOnUse"
+                                gradientTransform="translate(86.2926 11.0007) rotate(90) scale(4.71429 5.54167)">
+                                <stop stop-color="white" />
+                                <stop offset="0.145833" />
+                                <stop offset="0.255208" stop-color="white" />
+                                <stop offset="0.421875" />
+                                <stop offset="0.583333" stop-color="white" />
+                                <stop offset="0.770833" />
+                                <stop offset="0.864583" stop-color="white" />
+                                <stop offset="1" />
+                            </radialGradient>
+                            <radialGradient id="paint15_radial_160:7289" cx="0" cy="0" r="1"
+                                gradientUnits="userSpaceOnUse"
+                                gradientTransform="translate(97.7766 6.87095) rotate(84.8864) scale(8.49122 1.8163)">
+                                <stop stop-color="#6755D7" />
+                                <stop offset="0.203455" stop-color="#D3B0FF" />
+                                <stop offset="0.401848" stop-color="#EFB0FE" />
+                                <stop offset="0.615048" stop-color="#ABB3FC" />
+                                <stop offset="0.823232" stop-color="#ADBAFF" />
+                                <stop offset="1" stop-color="#58C4F6" />
+                            </radialGradient>
+                            <radialGradient id="paint16_angular_160:7289" cx="0" cy="0" r="1"
+                                gradientUnits="userSpaceOnUse"
+                                gradientTransform="translate(98.1676 11.0007) rotate(90) scale(4.71429 0.791667)">
+                                <stop stop-color="white" />
+                                <stop offset="0.145833" />
+                                <stop offset="0.255208" stop-color="white" />
+                                <stop offset="0.421875" />
+                                <stop offset="0.583333" stop-color="white" />
+                                <stop offset="0.770833" />
+                                <stop offset="0.864583" stop-color="white" />
+                                <stop offset="1" />
+                            </radialGradient>
+                            <radialGradient id="paint17_angular_160:7289" cx="0" cy="0" r="1"
+                                gradientUnits="userSpaceOnUse"
+                                gradientTransform="translate(98.1676 11.0007) rotate(90) scale(4.71429 0.791667)">
+                                <stop stop-color="white" />
+                                <stop offset="0.145833" />
+                                <stop offset="0.255208" stop-color="white" />
+                                <stop offset="0.421875" />
+                                <stop offset="0.583333" stop-color="white" />
+                                <stop offset="0.770833" />
+                                <stop offset="0.864583" stop-color="white" />
+                                <stop offset="1" />
+                            </radialGradient>
+                            <radialGradient id="paint18_radial_160:7289" cx="0" cy="0" r="1"
+                                gradientUnits="userSpaceOnUse"
+                                gradientTransform="translate(108.097 6.87095) rotate(57.9365) scale(9.97974 10.8177)">
+                                <stop stop-color="#6755D7" />
+                                <stop offset="0.203455" stop-color="#D3B0FF" />
+                                <stop offset="0.401848" stop-color="#EFB0FE" />
+                                <stop offset="0.615048" stop-color="#ABB3FC" />
+                                <stop offset="0.823232" stop-color="#ADBAFF" />
+                                <stop offset="1" stop-color="#58C4F6" />
+                            </radialGradient>
+                            <radialGradient id="paint19_angular_160:7289" cx="0" cy="0" r="1"
+                                gradientUnits="userSpaceOnUse"
+                                gradientTransform="translate(110.834 11.0007) rotate(90) scale(4.71429 5.54167)">
+                                <stop stop-color="white" />
+                                <stop offset="0.145833" />
+                                <stop offset="0.255208" stop-color="white" />
+                                <stop offset="0.421875" />
+                                <stop offset="0.583333" stop-color="white" />
+                                <stop offset="0.770833" />
+                                <stop offset="0.864583" stop-color="white" />
+                                <stop offset="1" />
+                            </radialGradient>
+                            <radialGradient id="paint20_angular_160:7289" cx="0" cy="0" r="1"
+                                gradientUnits="userSpaceOnUse"
+                                gradientTransform="translate(110.834 11.0007) rotate(90) scale(4.71429 5.54167)">
+                                <stop stop-color="white" />
+                                <stop offset="0.145833" />
+                                <stop offset="0.255208" stop-color="white" />
+                                <stop offset="0.421875" />
+                                <stop offset="0.583333" stop-color="white" />
+                                <stop offset="0.770833" />
+                                <stop offset="0.864583" stop-color="white" />
+                                <stop offset="1" />
+                            </radialGradient>
+                            <radialGradient id="paint21_radial_160:7289" cx="0" cy="0" r="1"
+                                gradientUnits="userSpaceOnUse"
+                                gradientTransform="translate(124.722 6.38381) rotate(14.8993) scale(5.48215 3.28212)">
+                                <stop stop-color="#6755D7" />
+                                <stop offset="0.203455" stop-color="#D3B0FF" />
+                                <stop offset="0.401848" stop-color="#EFB0FE" />
+                                <stop offset="0.615048" stop-color="#ABB3FC" />
+                                <stop offset="0.823232" stop-color="#ADBAFF" />
+                                <stop offset="1" stop-color="#58C4F6" />
+                            </radialGradient>
+                            <radialGradient id="paint22_angular_160:7289" cx="0" cy="0" r="1"
+                                gradientUnits="userSpaceOnUse"
+                                gradientTransform="translate(127.459 7.07209) rotate(90) scale(0.785714 5.54167)">
+                                <stop stop-color="white" />
+                                <stop offset="0.145833" />
+                                <stop offset="0.255208" stop-color="white" />
+                                <stop offset="0.421875" />
+                                <stop offset="0.583333" stop-color="white" />
+                                <stop offset="0.770833" />
+                                <stop offset="0.864583" stop-color="white" />
+                                <stop offset="1" />
+                            </radialGradient>
+                            <radialGradient id="paint23_angular_160:7289" cx="0" cy="0" r="1"
+                                gradientUnits="userSpaceOnUse"
+                                gradientTransform="translate(127.459 7.07209) rotate(90) scale(0.785714 5.54167)">
+                                <stop stop-color="white" />
+                                <stop offset="0.145833" />
+                                <stop offset="0.255208" stop-color="white" />
+                                <stop offset="0.421875" />
+                                <stop offset="0.583333" stop-color="white" />
+                                <stop offset="0.770833" />
+                                <stop offset="0.864583" stop-color="white" />
+                                <stop offset="1" />
+                            </radialGradient>
+                            <radialGradient id="paint24_radial_160:7289" cx="0" cy="0" r="1"
+                                gradientUnits="userSpaceOnUse"
+                                gradientTransform="translate(124.722 10.5558) rotate(42.9606) scale(7.23923 8.69922)">
+                                <stop stop-color="#6755D7" />
+                                <stop offset="0.203455" stop-color="#D3B0FF" />
+                                <stop offset="0.401848" stop-color="#EFB0FE" />
+                                <stop offset="0.615048" stop-color="#ABB3FC" />
+                                <stop offset="0.823232" stop-color="#ADBAFF" />
+                                <stop offset="1" stop-color="#58C4F6" />
+                            </radialGradient>
+                            <radialGradient id="paint25_angular_160:7289" cx="0" cy="0" r="1"
+                                gradientUnits="userSpaceOnUse"
+                                gradientTransform="translate(127.46 12.9648) rotate(90) scale(2.75 5.54167)">
+                                <stop stop-color="white" />
+                                <stop offset="0.145833" />
+                                <stop offset="0.255208" stop-color="white" />
+                                <stop offset="0.421875" />
+                                <stop offset="0.583333" stop-color="white" />
+                                <stop offset="0.770833" />
+                                <stop offset="0.864583" stop-color="white" />
+                                <stop offset="1" />
+                            </radialGradient>
+                            <radialGradient id="paint26_angular_160:7289" cx="0" cy="0" r="1"
+                                gradientUnits="userSpaceOnUse"
+                                gradientTransform="translate(127.46 12.9648) rotate(90) scale(2.75 5.54167)">
+                                <stop stop-color="white" />
+                                <stop offset="0.145833" />
+                                <stop offset="0.255208" stop-color="white" />
+                                <stop offset="0.421875" />
+                                <stop offset="0.583333" stop-color="white" />
+                                <stop offset="0.770833" />
+                                <stop offset="0.864583" stop-color="white" />
+                                <stop offset="1" />
+                            </radialGradient>
+                        </defs>
+                    </svg>
+                </a>
+                <div class="footer__copyright">© All rights reserved “Forske” 2021</div>
+            </div>
+        </footer>
+        <div class="popup" id="popup">
+            <div class="popup__wrapper" id="popup-wrap">
+                <div class="popup__content" id="popup-content">
+                    <div class="popup__form">
+                        <div class="popup__row">
+                            <div class="popup__title">Оставьте заявку</div>
+                            <div class="popup__close" id="popup-close">
+                                <img src="./assets/close.png" alt="">
+                            </div>
+                        </div>
+                        <form action="">
+                            <div class="input-wrapper input__select" id="input-select">
+                                <div class="current" id="input-current">Не выбрано</div>
+                                <div class="down-wrap">
+                                    <div class="down">
+                                        <div>Не выбрано</div>
+                                        <div>Заявка на листинг монет</div>
+                                        <div>Заявка для трейдеров, провайдеров ликвидности</div>
+                                        <div>Заявка на партнерство</div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="input-wrapper input__name">
+                                <input type="text" placeholder="Имя" name="" id="" class="input">
+                            </div>
+                            <div class="input-wrapper input__email">
+                                <input type="email" placeholder="Почта" name="" id="" class="input">
+                            </div>
+                            <div class="input-wrapper input__phone">
+                                <input type="tel" placeholder="Телефон" name="" id="" class="input">
+                            </div>
+                            <div class="input-check">
+                                <input type="checkbox" class="custom-checkbox" id="check" name="check">
+                                <label for="check">Пользовательские соглашение на обработку данных</label>
+                            </div>
+                            <a href="#" target="_blank" class="popup__link">Ознакомиться с пользовательским
+                                соглашением</a>
+                            <div class="popup__button button">
+                                <div class="button__gradient"></div>
+                                <div class="button__content">
+                                    <span>Свяжитесь со мной</span>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu" id="menu">
+            <div class="menu__close" id="menu-close">
+                <img src="./assets/close.png" alt="">
+            </div>
+            <div class="menu__wrapper">
+                <nav class="menu__navigation">
+                    <ul>
+                        <li>
+                            <a href="#about">О проекте</a>
+                        </li>
+                        <li>
+                            <a href="#advantages">Преимущества</a>
+                        </li>
+                        <li>
+                            <a href="#currencies">Валюты</a>
+                        </li>
+                        <li>
+                            <a href="#contacts">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="menu__button button for-popup">
+                    <div class="button__gradient"></div>
+                    <div class="button__content">
+                        <span>Начать</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <!-- <script src="./js/constants.js" type="Module"></script>
+    <script src="./js/anchors.js" type="Module"></script>
+    <script src="./js/languages.js" type="Module"></script>
+    <script src="./js/popup.js" type="Module"></script> -->
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
